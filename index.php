@@ -1,12 +1,19 @@
-<?php 
-$shadow = 12 + 12;
-echo  $shadow;
-echo gettype($shadow);   
-echo "<br>";
-var_dump((bool) '');
-echo "<br>";
-var_dump((bool) 120);
-echo "<br>";
-// echo gettype(12);
-echo (int) 15.2 + (int) 14.7 + (int) '12 sahdw' + (10.5 + 10.5);
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php include('test.php') ?>
+    <?php 
+       $username = $_POST["username"];
+    ?>
+    <h1><?php echo $username ?></h1>
+    <form action="" method="post">
+    <input type="text" name="username" value="<?php echo $username; ?>">
+    <input type="submit" value="Send">
+</form>
+</body>
+</html>
